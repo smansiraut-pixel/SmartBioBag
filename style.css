@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial;
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     background-color: #f4fff4;
@@ -12,6 +16,17 @@ header {
     text-align: center;
     padding: 30px;
 }
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
 
 section {
     margin: 20px;
@@ -19,10 +34,19 @@ section {
     background: white;
     border-radius: 12px;
     box-shadow: 0px 0px 10px lightgray;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
 }
 
 h2 {
     color: green;
+    font-size: 32px;
+    margin-bottom: 15px;
+    border-left: 5px solid green;
+    padding-left: 10px;
 }
 
 .status-container {
@@ -37,18 +61,6 @@ h2 {
     width: 200px;
     text-align: center;
     color: white;
-}
-
-.green {
-    background-color: green;
-}
-
-.yellow {
-    background-color: orange;
-}
-
-.red {
-    background-color: red;
 }
 
 footer {
@@ -68,4 +80,28 @@ footer {
     width: 250px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px gray;
+    transition: transform 0.4s;
+}
+
+.bag-image:hover {
+    transform: scale(1.05);
+}
+
+body {
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
 }
